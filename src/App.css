@@ -2,3 +2,8 @@
   color: white;
   opacity: 1;
 }
+
+.ant-tabs-tab-active .tab-label {
+  background: #a020f0 !important;
+  border: none !important;
+}

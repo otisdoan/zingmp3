@@ -41,10 +41,13 @@ export default function Chill() {
         </div>
         <div className="flex items-center gap-x-4">
           {music.map((item, index) => (
-            <div key={index} className="flex flex-col gap-y-4 items-start">
+            <div
+              key={index}
+              className="flex flex-col gap-y-4 items-start overflow-hidden"
+            >
               <img
                 src={item.image}
-                className="w-[14rem] h-[13rem] rounded-md hover:scale-105 duration-700 "
+                className="w-[14rem] h-[13rem] rounded-md hover:scale-110 duration-700 "
               />
               <p className="text-white pr-8 ">{item.descriptions}</p>
             </div>

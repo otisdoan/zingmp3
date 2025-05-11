@@ -2,6 +2,13 @@ import { Carousel } from "antd";
 import RecentlyHeard from "../RecentlyHeard";
 import RecommandHome from "../RecommandHome";
 import Chill from "../Chill";
+import NewRelease from "../NewRelease";
+import BxhNewMusic from "../BxhNewMusic";
+import ZingChart from "../ZingChart";
+import Top100 from "../Top100";
+import AlbumHot from "../AlbumHot";
+import RadioTop from "../RadioTop";
+import MusicPartner from "../MusicPartner";
 
 export default function ContentHome() {
   return (
@@ -26,6 +33,13 @@ export default function ContentHome() {
         <RecentlyHeard />
         <RecommandHome />
         <Chill />
+        <NewRelease />
+        <BxhNewMusic />
+        <ZingChart />
+        <Top100 />
+        <AlbumHot />
+        <RadioTop />
+        <MusicPartner />
       </div>
     </>
   );
