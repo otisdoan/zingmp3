@@ -8,14 +8,14 @@ import { BsMusicNoteList } from "react-icons/bs";
 import { CgMenuGridR } from "react-icons/cg";
 import { CiStar } from "react-icons/ci";
 import HeaderHome from "../../../components/Header";
-import ContentHome from "../../../components/Content";
+import { Link, Outlet } from "react-router-dom";
 const { Header, Content, Footer, Sider } = Layout;
 export default function Home() {
   const items = [
     {
       key: "1",
       icon: <MdOutlineLibraryMusic />,
-      label: "Thư viện",
+      label: <Link to="/mymusic">Thư viện</Link>,
     },
     {
       key: "2",
@@ -52,15 +52,17 @@ export default function Home() {
     <>
       <Layout>
         <Sider breakpoint="lg" className="">
-          <div className="">
-            <img src={logo} className="p-4 w-[10rem]" />
-          </div>
+          <Link to="/">
+            <div className="">
+              <img src={logo} className="p-4 w-[10rem]" />
+            </div>
+          </Link>
           <Menu theme="dark" items={items} />
         </Sider>
         <Layout>
           <HeaderHome />
           <Content className="bg-[#170f23] p-[3rem]">
-            <ContentHome />
+            <Outlet />
           </Content>
           <Footer className="bg-[#170f23]"></Footer>
         </Layout>
